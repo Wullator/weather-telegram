@@ -4,6 +4,6 @@
 Это телергам бот, который показывает погоду через OWM(Open Weather Map).
 Довольно примитивный по функицоналу, но достаточен, чтобы например вести школьнику дневник наблюдения за погодой
 # Установка
-1. pip install pyTelegramBotAPI
+1. pip install pyTelegramBotAPI, pyowm
 2. В телеграме, через @BotFather получаем токен
 3. https://openweathermap.org Здесь получаем токен для pyown
