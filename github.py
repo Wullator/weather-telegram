@@ -25,6 +25,7 @@ def get_ass(message):
         wete = w.wind()['deg']
         print(wete)
         davl = int(gg) - 11
+        rtst = str(davl/1.333)
         gay = ''
         if int(wete) < 45:
             gay = 'Север'
@@ -45,7 +46,7 @@ def get_ass(message):
         print("В городе " + g + " сейчас " + str(temperature) + "°С")
         bot.send_message(message.chat.id, 'В городе ' + g + ' сейчас ' + str(temperature) + '°C')
         bot.send_message(message.chat.id, 'Скорость ветра: ' + str(weter) + 'м/с, нпаравление ветра: ' + str(wete) + ' градусов = ' + gay)
-        bot.send_message(message.chat.id, 'Давление: ' + str(davl) + ' миллибар = ' + str(int(davl)/1.333) + ' мм.рт.ст')
+        bot.send_message(message.chat.id, 'Давление: ' + str(davl) + ' миллибар = ' + str(rtst[:-14]) + ' мм.рт.ст')
     except Exception as e:
         print(e)
         bot.send_message(message.chat.id, 'Город не найден')
